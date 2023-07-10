@@ -1,19 +1,18 @@
 import { ListGroup } from "react-bootstrap";
-import ItemTareas from "./ItemTareas";
-import "../components/helpers/queries"
+import ItemTareas from "../components/ItemTareas";
 
-const ListaTareas = ({listadoTareas, eliminarTarea, editarTarea}) => {
+const ListaTareas = ({ listadoTareas, eliminarTarea, editarTarea }) => {
   return (
     <ListGroup>
-        {listadoTareas.map((tarea) => (
-        <ItemTask
+      {listadoTareas.map((tarea) => (
+        <ItemTareas
           key={tarea._id}
           tarea={tarea}
           eliminarTarea={eliminarTarea}
           editarTarea={editarTarea}
-        ></ItemTask>
+        />
       ))}
-  </ListGroup>
+    </ListGroup>
   );
 };
 

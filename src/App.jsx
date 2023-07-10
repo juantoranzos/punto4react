@@ -5,8 +5,7 @@ import { Container } from 'react-bootstrap'
 import Formulario from './components/Formulario'
 
 function App() {
-  const [count, setCount] = useState(0)
-
+ 
   return (
     <>
    <Container className='my-5 mainPage'>
