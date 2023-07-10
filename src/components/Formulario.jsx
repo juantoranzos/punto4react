@@ -4,6 +4,10 @@ import { useState, useEffect, useRef } from 'react';
 import { crearTarea, deleteConsultTask, obtenerTareas, editarTarea, obtenerTarea } from './helpers/queries';
 import Swal from 'sweetalert2';
 
+
+
+// VITE_API_TAREAS=http://localhost:3005/apilistatareas/tareas
+
 const Formulario = () => {
   const [tareas, setTareas] = useState([]);
   const [input, setInput] = useState("");
